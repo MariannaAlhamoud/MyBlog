@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    font-family:sans-serif ;
+}
+.hero{
+    min-height:100vh ;
+    background-image: url(../images/homebanner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.content{
+  text-align: center;  
+  color: aliceblue;
+}
+.content h1{
+    font-size: 30px;
+    margin-bottom:  20px; 
+}
+.content p{
+    font-size: 22px;
+    margin-bottom:20px ;
+}
