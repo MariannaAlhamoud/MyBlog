@@ -4,7 +4,7 @@
 }
 .hero{
     min-height:100vh ;
-    background-image: url(../images/homebanner.jpg);
+    background-image: url(../images/homepagebanner2.jpg);
     background-repeat: no-repeat;
     background-size:cover ;
     background-position: center;
@@ -23,4 +23,25 @@
 .content p{
     font-size: 22px;
     margin-bottom:20px ;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%; /* Adjust this if needed */
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:blue; /* Change the text color as needed */
+    font-size: 24px; /* Adjust text size as needed */
+    font-weight: bold; /* Optional: Make the text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Add text shadow for better visibility */
 }
