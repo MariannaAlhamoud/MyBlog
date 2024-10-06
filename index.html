@@ -203,6 +203,16 @@
                 </div>
             </div>
         </div>
+        <div class="col-auto">
+            <div class="card" style="width: 18rem;">
+                <img src="./images/squareroot.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Square roots of negative numbers can be discussed within the framework of
+                        complex numbers.</p>
+                    <a href="./articles/article13.html">Read more...</a>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -213,12 +223,23 @@
     <footer class="d-flex justify-content-center">
         <div class="hero-image">
 
-            <p>© 2024 All Rights Reserved, 9 year old Marianna®</p>
+            <p>© <span id="year"></span> All Rights Reserved, <span id="dob"></span> year old Marianna®</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("year").innerHTML = (new Date().getFullYear());
 
+
+
+        const currentYear = new Date().getFullYear();
+        console.log(currentYear);
+
+        const birthYear = currentYear - 2014;
+        document.getElementById("dob").innerHTML = birthYear;
+        console.log(`Your birth year is: ${birthYear}`);
+    </script>
 </body>
 
 </html>
