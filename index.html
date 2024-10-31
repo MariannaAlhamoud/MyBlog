@@ -46,8 +46,6 @@
     </nav>
 
 
-
-
     <div class="image-container">
         <picture>
             <source media="(min-width:650px)" srcset="./images/frame.png">
@@ -55,13 +53,18 @@
             <source media="(min-width:465px)" srcset="./images/backlav.png">
             <img src="./images/small.png" alt="Pictures">
         </picture>
-        <div class="overlay-text">Welcome to Marianna Alhamoud's website!Scroll down to see more...</div>
+        <h1 style="color: blue;" style="font-size: medium;">Marianna's website</h1>
+        <div id="qurancontainer" class="overlay-text" style="color: darkgreen;"></div>
+            
 
     </div>
-    </div>
+   
+</div>
 
 
-    <main class="container-fluid row">
+
+        
+<main class="container-fluid row">
         <div class="col-auto">
             <div class="card" style="width: 18rem;">
                 <img src="./images/speech.jpeg" class="card-img-top" alt="...">
@@ -276,6 +279,7 @@
         document.getElementById("dob").innerHTML = birthYear;
         console.log(`Your birth year is: ${birthYear}`);
     </script>
+    <script src="./js/quranAPI.js"></script>
 </body>
 
 </html>
